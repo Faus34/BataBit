@@ -379,7 +379,8 @@ main {
   color: #757575;
 }
 
-.plans-container-card {
+.plans-container-card,
+.plans-container-card__limitado {
   position: relative;
   width: 70%;
   min-width: 230px;
@@ -392,7 +393,13 @@ main {
   box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
 }
 
-.recomendado {
+.plans-container-card__limitado {
+  background-color: var(--black);
+}
+
+.recomendado,
+.basico,
+.limitado {
   position: absolute;
   width: 120px;
   height: 31px;
@@ -404,8 +411,18 @@ main {
   font-size: 1.2rem;
   padding: 6px;
 }
+.basico {
+  background-color: var(--secondary-blue);
+  color: var(--just-white);
+}
 
-.plan-card-title {
+.limitado {
+  background-color: var(--grey);
+  color: var(--black);
+}
+
+.plan-card-title,
+.plans-container-card__limitado .plan-card-title {
   padding-top: 30px;
   font-size: 1.4rem;
   font-weight: 500;
@@ -421,6 +438,11 @@ main {
   color: var(--black);
 }
 
+.plans-container-card__limitado .plan-card-title,
+.plans-container-card__limitado .plan-card-price {
+  color: var(--just-white);
+}
+
 .plan-card-price span {
   font-size: 1.2rem;
   font-weight: 300;
@@ -431,6 +453,10 @@ main {
 .plan-card-saving {
   font-size: 1.2rem;
   color: #757575;
+}
+
+.plans-container-card__limitado .plan-card-saving {
+  color: var(--off-white);
 }
 
 .plan-card-ca {
@@ -445,6 +471,11 @@ main {
   line-height: 1.8rem;
   color: var(--black);
   font-family: "DM Sans", "sans-serif";
+}
+
+.plans-container-card__limitado .plan-card-ca {
+  color: var(--just-white);
+  background-color: var(--warm-black);
 }
 
 .plan-card-ca span {
