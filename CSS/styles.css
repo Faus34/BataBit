@@ -156,6 +156,15 @@ main {
   scroll-snap-type: x proximity;
 }
 
+.main-tables-container::-webkit-scrollbar {
+  background-color: var(--soft-orange);
+  height: 3px;
+}
+
+.main-tables-container::-webkit-scrollbar-thumb {
+  background-color: var(--bitcoin-orange);
+}
+
 .main-currency-table {
   scroll-snap-align: center;
   width: 70%;
